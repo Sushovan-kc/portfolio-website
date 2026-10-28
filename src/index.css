@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-paper: #e8f5e9;
+  --color-night: #0a0a0a;
+  --color-ink: #0d0d0d;
+  --color-forest: #1a1a1a;
+  --color-mint: #f1f8e9;
+  --color-lime: #2e7d32;
+  --color-sage: #81c784;
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: var(--font-sans); font-size: 18px; }
+::selection { background: #81c784; color: #0d0d0d; }

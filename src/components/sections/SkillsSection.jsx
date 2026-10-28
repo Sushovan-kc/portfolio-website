@@ -1,0 +1,6 @@
+import { Check } from 'lucide-react'
+import { skills } from '../../data/portfolio'
+
+export default function SkillsSection() {
+  return <section id="skills" className="mx-auto max-w-6xl px-6 py-24 sm:px-10"><div className="rounded-2xl border border-ink/10 bg-ink/[0.04] p-8 shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] dark:border-paper/10 dark:bg-paper/[0.04] sm:p-10"><div className="mb-14 flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><div><p className="mb-4 text-sm font-bold uppercase tracking-[.2em] text-lime">03 / Toolkit</p><h2 className="font-display text-4xl tracking-tight sm:text-6xl">What I work with</h2></div><p className="max-w-xs text-base leading-6 text-ink/80 dark:text-paper/80">A practical toolkit for taking ideas from a notebook to a useful product.</p></div><div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">{skills.map(([category, items]) => <div key={category}><h3 className="mb-5 text-base font-bold uppercase tracking-[.12em] text-lime">{category}</h3><ul className="space-y-3">{items.map((item) => <li key={item} className="flex items-center gap-3 text-base text-ink/80 dark:text-paper/80"><Check size={15} className="text-lime" />{item}</li>)}</ul></div>)}</div></div></section>
+}
