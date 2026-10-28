@@ -49,7 +49,7 @@ export const projects = [
 ]
 
 export const education = [
-  ['Education', 'Advanced College of Engineering and Management', 'Bachelor of Engineering · April 2021 – Present'],
+  ['Education', 'Advanced College of Engineering and Management', 'Bachelor of Engineering Computer Engineering · April 2022 – April 2026'],
   ['Specialization', 'Deep learning & computer vision', 'U-Net, TransUNet, MAE, CNNs · Medical image analysis'],
   ['Track record', 'Production AI systems', 'End-to-end ML pipelines · Django/Flask deployment'],
 ]
